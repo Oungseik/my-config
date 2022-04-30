@@ -108,7 +108,7 @@
     {
       "before": [
         "<leader>",
-        "s"
+        "w"
       ],
       "commands": [
         "editor.action.formatDocument",
@@ -121,14 +121,6 @@
       "before": [
         "j",
         "j"
-      ],
-      "after": [
-        "<Esc>"
-      ]
-    },
-    {
-      "before": [
-        "<C-s>"
       ],
       "after": [
         "<Esc>"
