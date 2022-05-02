@@ -24,6 +24,7 @@
     },
     "redhat.telemetry.enabled": true,
     "vsintellicode.modelDownloadPath": "",
+
     "vim.easymotion": true,
     "vim.incsearch": true,
     "vim.useSystemClipboard": true,
@@ -42,57 +43,82 @@
             "after": ["<C-w>", "h"]
         },
         {
-            "before": ["C-w"],
-            "after": [":", "q", "!", "<CR>"]
+            "before": ["<C-l>"],
+            "after": ["<C-w>", "l"]
         },
         {
             "before": ["<leader>", "f"],
-            "commands": ["workbench.action.quickOpen"]
+            "commands": ["workbench.action.quickOpen"],
+            "silent": true
         },
         {
             "before": ["<leader>", "h"],
-            "commands": [":nohl"]
+            "commands": [":nohl"],
+            "silent": true
         },
         {
             "before": ["<leader>", "c"],
-            "commands": ["workbench.action.closeActiveEditor"]
+            "commands": ["workbench.action.closeActiveEditor"],
+            "silent": true
         },
         {
             "before": ["<leader>", "/"],
-            "commands": ["editor.action.commentLine"]
+            "commands": ["editor.action.commentLine"],
+            "silent": true
         },
+
         {
             "before": ["<leader>", "w"],
             "commands": [
                 "editor.action.formatDocument",
                 "workbench.action.files.save"
-            ]
+            ],
+            "silent": true
+        },
+        {
+            "before": ["<leader>", "l", "f"],
+            "commands": ["editor.action.formatDocument"],
+            "silent": true
+        },
+        {
+            "before": ["<leader>", "e"],
+            "commands": ["workbench.view.explorer"],
+            "silent": true
         },
         {
             "before": ["<S-k>"],
-            "commands": ["editor.action.showHover"]
+            "commands": ["editor.action.showHover"],
+            "silent": true
         }
     ],
+
     "vim.insertModeKeyBindings": [
         {
             "before": ["j", "j"],
             "after": ["<Esc>"]
         },
         {
+            "before": ["<C-s>"],
+            "after": ["<Esc>"]
+        },
+        {
             "before": ["<C-l>"],
-            "commands": ["cursorEnd"]
+            "commands": ["cursorEnd"],
+            "silent": true
         }
     ],
     "vim.visualModeKeyBindings": [
         {
             "before": ["<leader>", "/"],
-            "commands": ["editor.action.commentLine"]
+            "commands": ["editor.action.commentLine"],
+            "silent": true
         }
     ],
     "vim.leader": "<space>",
     "vim.handleKeys": {
         "<C-s>": true
     },
+
     "explorer.confirmDelete": false,
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -110,5 +136,8 @@
     "[markdown]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "vscode-neovim.neovimExecutablePaths.linux": "/usr/local/sbin/nvim"
+    "vscode-neovim.neovimExecutablePaths.linux": "/usr/local/sbin/nvim",
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
