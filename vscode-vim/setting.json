@@ -24,7 +24,6 @@
     },
     "redhat.telemetry.enabled": true,
     "vsintellicode.modelDownloadPath": "",
-
     "vim.easymotion": true,
     "vim.incsearch": true,
     "vim.useSystemClipboard": true,
@@ -66,7 +65,6 @@
             "commands": ["editor.action.commentLine"],
             "silent": true
         },
-
         {
             "before": ["<leader>", "w"],
             "commands": [
@@ -95,7 +93,6 @@
             "silent": true
         }
     ],
-
     "vim.insertModeKeyBindings": [
         {
             "before": ["j", "j"],
@@ -124,13 +121,17 @@
                 "workbench.action.files.save"
             ],
             "silent": true
+        },
+        {
+            "before": ["<leader>", "f"],
+            "commands": ["workbench.action.quickOpen"],
+            "silent": true
         }
     ],
     "vim.leader": "<space>",
     "vim.handleKeys": {
         "<C-s>": true
     },
-
     "explorer.confirmDelete": false,
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
