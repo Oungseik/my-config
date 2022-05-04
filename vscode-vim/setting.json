@@ -81,6 +81,10 @@
             "silent": true
         },
         {
+            "before": ["<leader>", "l", "r"],
+            "commands": ["editor.action.rename"]
+        },
+        {
             "before": ["<leader>", "e"],
             "commands": ["workbench.view.explorer"],
             "silent": true
@@ -111,6 +115,14 @@
         {
             "before": ["<leader>", "/"],
             "commands": ["editor.action.commentLine"],
+            "silent": true
+        },
+        {
+            "before": ["<leader>", "w"],
+            "commands": [
+                "editor.action.formatDocument",
+                "workbench.action.files.save"
+            ],
             "silent": true
         }
     ],
