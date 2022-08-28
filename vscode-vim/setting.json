@@ -1,156 +1,163 @@
 {
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', 'monospace', 'Ubuntu Nerd Font'",
-    "editor.rulers": [80],
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "workbench.colorTheme": "One Dark Pro",
+  "tabnine.experimentalAutoImports": true,
+  "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "'jetBrains Mono', monospace",
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<C-k>"],
+      "after": ["<C-w>", "k"]
     },
-    "prettier.tabWidth": 4,
-    "explorer.confirmDragAndDrop": false,
-    "prettier.arrowParens": "avoid",
-    "editor.fontFamily": "'JetBrainsMono NF', 'monospace'",
-    "editor.fontSize": 13,
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    {
+      "before": ["<C-j>"],
+      "after": ["<C-w>", "j"]
     },
-    "workbench.colorTheme": "One Dark Pro",
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    {
+      "before": ["<C-h>"],
+      "after": ["<C-w>", "h"]
     },
-    "[javascriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    {
+      "before": ["<C-l>"],
+      "after": ["<C-w>", "l"]
     },
-    "redhat.telemetry.enabled": true,
-    "vsintellicode.modelDownloadPath": "",
-    "vim.easymotion": true,
-    "vim.incsearch": true,
-    "vim.useSystemClipboard": true,
-    "vim.hlsearch": true,
-    "vim.normalModeKeyBindings": [
-        {
-            "before": ["<C-k>"],
-            "after": ["<C-w>", "k"]
-        },
-        {
-            "before": ["<C-j>"],
-            "after": ["<C-w>", "j"]
-        },
-        {
-            "before": ["<C-h>"],
-            "after": ["<C-w>", "h"]
-        },
-        {
-            "before": ["<C-l>"],
-            "after": ["<C-w>", "l"]
-        },
-        {
-            "before": ["<leader>", "f"],
-            "commands": ["workbench.action.quickOpen"],
-            "silent": true
-        },
-        {
-            "before": ["<leader>", "h"],
-            "commands": [":nohl"],
-            "silent": true
-        },
-        {
-            "before": ["<leader>", "c"],
-            "commands": ["workbench.action.closeActiveEditor"],
-            "silent": true
-        },
-        {
-            "before": ["<leader>", "/"],
-            "commands": ["editor.action.commentLine"],
-            "silent": true
-        },
-        {
-            "before": ["<leader>", "w"],
-            "commands": [
-                "editor.action.formatDocument",
-                "workbench.action.files.save"
-            ],
-            "silent": true
-        },
-        {
-            "before": ["<leader>", "l", "f"],
-            "commands": ["editor.action.formatDocument"],
-            "silent": true
-        },
-        {
-            "before": ["<leader>", "l", "r"],
-            "commands": ["editor.action.rename"]
-        },
-        {
-            "before": ["<leader>", "e"],
-            "commands": ["workbench.view.explorer"],
-            "silent": true
-        },
-        {
-            "before": ["<S-k>"],
-            "commands": ["editor.action.showHover"],
-            "silent": true
-        }
-    ],
-    "vim.insertModeKeyBindings": [
-        {
-            "before": ["j", "j"],
-            "after": ["<Esc>"]
-        },
-        {
-            "before": ["<C-s>"],
-            "after": ["<Esc>"]
-        },
-        {
-            "before": ["<C-l>"],
-            "commands": ["cursorEnd"],
-            "silent": true
-        }
-    ],
-    "vim.visualModeKeyBindings": [
-        {
-            "before": ["<leader>", "/"],
-            "commands": ["editor.action.commentLine"],
-            "silent": true
-        },
-        {
-            "before": ["<leader>", "w"],
-            "commands": [
-                "editor.action.formatDocument",
-                "workbench.action.files.save"
-            ],
-            "silent": true
-        },
-        {
-            "before": ["<leader>", "f"],
-            "commands": ["workbench.action.quickOpen"],
-            "silent": true
-        }
-    ],
-    "vim.leader": "<space>",
-    "vim.handleKeys": {
-        "<C-s>": true
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["workbench.action.quickOpen"],
+      "silent": true
     },
-    "explorer.confirmDelete": false,
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    {
+      "before": ["<C-b>"],
+      "commands": ["workbench.action.toggleSidebarVisibility"],
+      "silent": true
     },
-    "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    {
+      "before": ["<leader>", "h"],
+      "commands": [":nohl"],
+      "silent": true
     },
-    "terminal.integrated.fontSize": 13,
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
+    {
+      "before": ["<leader>", "c"],
+      "commands": ["workbench.action.closeActiveEditor"],
+      "silent": true
     },
-    "editor.lineHeight": 1.2,
-    "glassit.alpha": 255,
-    "svelte.enable-ts-plugin": true,
-    "[markdown]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    {
+      "before": ["<leader>", "/"],
+      "commands": ["editor.action.commentLine"],
+      "silent": true
     },
-    "vscode-neovim.neovimExecutablePaths.linux": "/usr/local/sbin/nvim",
-    "[scss]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    {
+      "before": ["<leader>", "w"],
+      "commands": ["editor.action.formatDocument", "workbench.action.files.save"],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "l", "f"],
+      "commands": ["editor.action.formatDocument"],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "l", "r"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.view.explorer"],
+      "silent": true
+    },
+    {
+      "before": ["<S-k>"],
+      "commands": ["editor.action.showHover"],
+      "silent": true
+    },
+    {
+      "before": ["<S-l>"],
+      "commands": ["workbench.action.nextEditorInGroup"],
+      "silent": true
+    },
+    {
+      "before": ["<S-h>"],
+      "commands": ["workbench.action.previousEditorInGroup"],
+      "silent": true
     }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["<C-s>"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["<C-l>"],
+      "commands": ["cursorEnd"],
+      "silent": true
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["<leader>", "/"],
+      "commands": ["editor.action.commentLine"],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "w"],
+      "commands": ["workbench.action.files.save"],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["workbench.action.quickOpen"],
+      "silent": true
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-s>": true
+  },
+  "editor.fontSize": 13,
+  "terminal.integrated.fontSize": 13,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.confirmDelete": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.startupEditor": "none",
+  "glassit.alpha": 245,
+  "editor.minimap.enabled": false,
+  "markdown.preview.fontSize": 16,
+  "markdown.preview.lineHeight": 1.5,
+  "intelephense.format.braces": "k&r",
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "prettier.printWidth": 300,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.activityBar.visible": false,
+  "files.associations": {
+    "*.erb": "html"
+  }
 }
